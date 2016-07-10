@@ -1,0 +1,26 @@
+<div class="row card-row">
+  <div class="col-xs-12 col-xs-6 col-md-6 checkout">
+    <div clas="info-box">
+      <div class="info-box-title">
+        Thank You for Your Order!
+      </div>
+      <div class="info-box-content">
+        <p>
+          Name : <%= @order_item.item_name %>
+        </p>
+        <p>
+          Price: <%= @order_item.price %> + (Delivery Charge : VND 20,000)
+        </p>
+        <p>
+          Customer Name : <%= @order_item.user_name %>
+        </p>
+        <p>
+          Customer Address : <%= @order_item.user_address %>
+        </p>
+        <p>
+          Ordered at : <%= Time.now %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

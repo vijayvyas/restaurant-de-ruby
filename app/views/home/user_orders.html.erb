@@ -1,0 +1,30 @@
+<div class="row card-row">
+  <div class="col-xs-12 col-sm-6 col-md-6" style="padding: 1px;">
+    <%= image_tag @menu_item.image_url, width: '100%' , alt: 'About Us'%>
+  </div>
+  <div class="col-xs-12 col-xs-6 col-md-6">
+    <div clas="info-box">
+      <div class="info-box-title">
+        <%= @menu_item.name %>
+      </div>
+      <div class="info-box-content">
+        <p>
+          <%= @menu_item.description %>
+        </p>
+        <div class="menu-price">
+          VND <%= @menu_item.price %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row card-row">
+  <%= bootstrap_form_for(@order_item) do |f| %>
+    <%= f.text_field :item_name, :value => @menu_item.name, :readonly => true %>
+    <%= f.text_field :price, :value => @menu_item.price, :readonly => true %>
+    <%= f.text_field :user_name %>
+    <%= f.text_field :user_phone %>
+    <%= f.text_area :user_address %>
+    <%= f.submit "Submit" %>
+  <% end %>
+</div>
