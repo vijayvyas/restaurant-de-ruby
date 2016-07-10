@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# restaurant-de-ruby
+>>>>>>> 0620e15f0d1ac3a38945cce0fd114d3be3124e4a
